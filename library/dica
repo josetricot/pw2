@@ -1,0 +1,2 @@
+abre cada pasta em uma ide e executa ./mvnw quarkus:dev em ambos terminais
+abre um terceiro terminal (em qualquer um dois dois) executa ./mvnw test -Dtest=LoansTest
