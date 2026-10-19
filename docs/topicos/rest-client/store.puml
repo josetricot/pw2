@@ -1,9 +1,0 @@
-@startuml
-    participant "Checkout\n(Rest Client)" as Checkout
-    participant "Payment\n(Rest Service)" as Payment
-
-    Checkout -> Payment: POST /payment (cardNumber, value)
-    activate Payment
-    Payment --> Checkout: Invoice(valid = true)
-    deactivate Payment
-@enduml
