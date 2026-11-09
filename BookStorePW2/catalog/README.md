@@ -2,6 +2,23 @@
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
+## Books API
+
+The catalog exposes the following operations at `/books`:
+
+| Method | Path | Description |
+| --- | --- | --- |
+| `POST` | `/books` | Creates a book |
+| `GET` | `/books` | Lists all books |
+| `GET` | `/books/{id}` | Retrieves a book |
+| `PUT` | `/books/{id}` | Updates a book's title and author |
+| `DELETE` | `/books/{id}` | Deletes a book |
+| `PUT` | `/books/{id}/loan` | Loans a book |
+| `PUT` | `/books/{id}/return` | Returns a book |
+
+The catalog currently stores books in memory, so its data is reset when the
+application restarts. Updating a book does not change its ID or loan status.
+
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
 
 ## Running the application in dev mode
